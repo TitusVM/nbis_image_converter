@@ -48,8 +48,6 @@ public class Converter {
      * @throws IOException 
      */
     public static String convertJp2ToPng(File jp2) throws IOException {
-        JPEG2000PluginRegistrer.registerJPEG2000Plugin();
-
         BufferedImage image = ImageIO.read(jp2);
 
         if (image != null) {
