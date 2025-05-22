@@ -6,7 +6,7 @@ A simple REST API for converting WSQ and JP2 (JPEG 2000) fingerprint images to P
 ## Install and run
 
 1. **Install Java 21**  
-   Download and install [OpenJDK 21](https://adoptium.net/temurin/releases/?version=21).
+   Download and install [JDK 21](https://www.oracle.com/java/technologies/downloads/#java21).
 
 2. **Clone the repository**  
    ```powershell
