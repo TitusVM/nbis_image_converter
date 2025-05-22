@@ -2,6 +2,35 @@
 
 A simple REST API for converting WSQ and JP2 (JPEG 2000) fingerprint images to PNG format.
 
+
+## Install and run
+
+1. **Install Java 21**  
+   Download and install [OpenJDK 21](https://adoptium.net/temurin/releases/?version=21).
+
+2. **Clone the repository**  
+   ```powershell
+   git clone git@github.com:TitusVM/nbis_image_converter.git
+   cd nbis_image_converter
+   ```
+
+3. **Build the project**  
+   ```powershell
+   .\mvnw.cmd clean package
+   ```
+
+4. **Run the Spring Boot app**  
+   ```powershell
+   .\mvnw.cmd spring-boot:run
+   ```
+
+5. **Access the API**  
+   The server will start at [http://localhost:8080/nbis-image-converter/api/ping](http://localhost:8080/nbis-image-converter/api/ping).
+
+**Note:**  
+- Make sure you have an internet connection for Maven to download dependencies on first run.
+- For Windows, use mvnw.cmd; for Linux/macOS, use mvnw.
+
 ## Endpoints
 
 ### 1. Health Check
@@ -30,10 +59,6 @@ curl -X POST http://localhost:8080/nbis-image-converter/api/jp2-png \
 
 ## CORS
 - CORS is enabled for `http://localhost:5173` by default.
-
-## Requirements
-- Java 17+
-- Maven
 
 ## Notes
 - Temporary files are used for conversion and deleted after processing.
